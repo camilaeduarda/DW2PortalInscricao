@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+:root {
+    --primary-color: #64b358;
+    --secondary-color: #4f61a2;
+    --tertiary-color: #fefefe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right, var(--primary-color) 0%, var(--secondary-color) 100%);
+    height: 100vh;
+    font-family: 'DM Serif Text', serif;
+    color: var(--secondary-color);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a.link {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+main {
+    background-color: var(--tertiary-color);
+    padding: 4rem;
+    margin: 4rem;
+    width: 80%;
+    margin: auto;
+}
