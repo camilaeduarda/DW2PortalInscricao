@@ -7,52 +7,94 @@
     <title>Portal de Inscrição</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
 </head>
 <body>
     <main>
-        <header>
-            <h1>IF</h1>
+        <header class="header-container">
+            <h1 class="if-logo">IF</h1>
             <h2>Exame de seleção 2023</h2>
             <h3>Campus Três Lagoas</h3>
         </header>
 
-        <section>
+        <section class="informative-container">
             <h3>Informátivo sobre a instituição no qual</h3>
-            <p>requisitos</p>
+            
+            <nav>
+                <span class="show-option" onclick="openShowcase(0)">Entenda o Exame</span>
+                <span class="show-option" onclick="openShowcase(1)">Cursos e Vagas</span>
+                <span class="show-option" onclick="openShowcase(2)">Datas importantes</span>
+                <span class="show-option" onclick="openShowcase(3)">O que cai na prova?</span>
+                <span class="show-option" onclick="openShowcase(4)">Dúvidas Frequentes</span>
+                <span class="show-option" onclick="openShowcase(5)">Contato</span>
+            </nav>
         </section>
 
-        <section>
-            <h3>Cursos Ofertados</h3>
+        <section id="showcase-container"></section>
 
-            <p>Informática</p>
-            <p>Eletrotécnica</p>
-        </section>
-
-        <section>
-            <div>
-                <h2>Incrições</h2>
-                <h2>12 AGO à 05 OUT</h2>
+        <section class="courses-container">
+            <h3 class="text-center">Cursos Ofertados</h3>
+            
+            <div class="courses">
+                <div class="course">
+                    <img class="img-course" src="./media/info.jpeg" />
+                    <p class="name">Informática</p>
+                </div>
+                
+                <div class="course">
+                    <img class="img-course" src="./media/eletro.jpeg" />
+                    <p class="name">Eletrotécnica</p>
+                </div>
             </div>
-            <div>
-                qr code
+        </section>
+
+        <section class="registrations-container">
+            <div class="texts">
+                <h1>Inscrições</h1>
+                <h3>12 AGO à 05 OUT</h3>
+            </div>
+            <div class="qr-code">
+                <img src="./media/qr.png" alt="QR CODE" title="QR CODE">
             </div>
         </section>
 
-        <section>
-            <div>
-                <p>A sua prova ocorrerá no dia</p>
-                <h3>23 OUT</h3>
+        <section class="last-banner-container">
+            <div class="post-it">
+                <p class="">A sua prova ocorrerá no dia</p>
+                <h3 class="">23 OUT</h3>
             </div>
             
-            <div>
-                boneca feia descabelada aqui
+            <div class="doll">
+                <p>boneca aqui</p>
 
-                <button>Inscriver-se</button>
+                <button class="">Inscriver-se</button>
             </div>
         </section>
 
-        <footer>
-            <h3>Contatos do Rodapé</h3>
+        <footer class="footer-container">
+            <h3 class="text-center">Contatos do Rodapé</h3>
+
+            <div>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+            </div>
+
+            <div>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+            </div>
+
+            <div>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+                <p>Dados</p>
+            </div>
         </footer>
     </main>
 </body>
