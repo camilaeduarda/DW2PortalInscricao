@@ -30,12 +30,38 @@ a.link {
     text-decoration: underline;
 }
 
+a.link-secondary {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.5rem;
+}
+
 main {
     background-color: var(--tertiary-color);
     /* max-width: var(--max-content-page); */
 }
 
 /* UTILS */
+
+.mb-5 {
+    margin-bottom: 2rem;
+}
 
 .text-center {
     text-align: center;
@@ -46,9 +72,8 @@ main {
 .header-container {
     padding: 2rem;
     background-color: var(--primary-color);
-    
-    /* background: linear-gradient(to bottom right, var(--primary-color) 0%, var(--secondary-color) 100%); */
     color: var(--tertiary-color);
+    border-bottom: 3rem solid var(--secondary-color);
 
     text-align: center;
 }
@@ -87,6 +112,11 @@ main {
 }
 
 .informative-container nav span {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     text-align: center;
     padding: 0.5rem;
     cursor: pointer;
@@ -129,10 +159,6 @@ main {
 
 .courses-container .course:hover {
     border: 1px solid var(--secondary-color);
-}
-
-.courses-container .course .name {
-    font-size: 2em;
 }
 
 .courses-container .course .img-course {
@@ -190,7 +216,7 @@ main {
     background-image: url(./media/sticky.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4rem;
+    padding: 5.85rem 3.4rem 5rem 4em;
     flex: 1;
     min-height: 400px;
 }
@@ -225,8 +251,14 @@ main {
     flex-direction: column;
     gap: 1rem;
     justify-content: space-around;
+    border-top: 10rem solid var(--secondary-color);
 }
 
+.footer-container > div {
+    flex: 1;
+}
+
+/* OTHERS */
 @media (min-width: 600px) {
     main {
         margin: auto;
@@ -241,10 +273,11 @@ main {
     }
 
     .last-banner-container .post-it {
-        padding: 5rem;
+        padding: 4.5rem;
     }
 
     .footer-container {
         flex-direction: row;
+        gap: 8rem;
     }
 }
