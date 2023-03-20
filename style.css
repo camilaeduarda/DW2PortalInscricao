@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
 
 :root {
     --primary-color: #64b358;
@@ -38,7 +37,7 @@ html {
 }
 
 body {
-    font-family: 'DM Serif Text', serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--secondary-color);
 }
 
@@ -150,6 +149,7 @@ main {
 }
 
 #showcase-container {
+    font-family: 'Roboto', sans-serif;
     display: none;
     max-width: var(--max-content-page);
     padding: 1rem;
@@ -189,6 +189,7 @@ main {
 }
 
 .registrations-container {
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom right, var(--primary-color) 0%, var(--secondary-color) 100%);
     color: var(--tertiary-color);
     font-size: 1.2em;
@@ -266,6 +267,7 @@ button[type="submit"]:hover {
 }
 
 .footer-container {
+    font-family: 'Roboto', sans-serif;
     padding: 2rem;
     background-color: var(--primary-color);
     color: var(--tertiary-color);

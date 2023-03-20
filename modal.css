@@ -12,6 +12,7 @@
 }
 
 .modal-content {
+    font-family: 'Roboto', sans-serif;
     position: relative;
     background-color: #fff;
     margin: 5px auto;
