@@ -188,6 +188,8 @@ main {
     margin: auto;
 }
 
+
+
 .registrations-container {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom right, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -223,6 +225,22 @@ main {
     border: 1px solid #eee;
 }
 
+.ifmslogo {
+    width: 15vw;
+    height: 20vh;
+}
+
+.doll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boneca {
+    width: 25vw;
+    height: 50vh;
+}
 
 .last-banner-container {
     max-width: var(--max-content-page);
@@ -317,6 +335,7 @@ input:focus {
 
     .informative-container nav {
         flex-direction: row;
+        border-radius: 5px;
     }
     
     .registrations-container {
