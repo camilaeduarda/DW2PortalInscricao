@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Inscrição</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Faça sua inscrição para o ensino médio integrado neste portal de inscrição do IFMS">
+   <meta name="keywords" content="IFMS, incrição, vestibular, ensino médio técnico">
+   <meta name="author" content="CD Company">
 
-    <link rel="stylesheet" href="style.css">
+   <title>Portal de Inscrição</title>
 
-    <script src="script.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="modal.css">
+
+   <script src="script.js"></script>
+   <script src="utils.js"></script>
 </head>
 <body>
     <main>
@@ -79,7 +85,7 @@
             <div class="doll">
                 <p>boneca aqui</p>
 
-                <button class="">Inscriver-se</button>
+                <button id="myBtn">Inscriver-se</button>
             </div>
         </section>
 
@@ -535,5 +541,41 @@
       <p>Horário de atendimento: 8h às 17h</p>
       <p>Reitoria do IFMS: Rua Jorn. Belizário Lima, 236, Vila Glória - Campo Grande/MS - CEP: 79004-270  (endereço provisório)</p>
     </template>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+         <span class="close">&times;</span>
+         <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <br>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+            <br>
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg">
+            <br>
+            <label for="historico">Histórico escolar do ensino fundamental ou equivalente:</label>
+            <input type="file" id="historico" name="historico">
+            <br>
+            <label for="identificacao">Documento oficial de identificação com foto:</label>
+            <input type="file" id="identificacao" name="identificacao">
+            <br>
+            <label for="militar">Documento que comprove estar em dia com o Serviço Militar (quando pertinente):</label>
+            <input type="file" id="militar" name="militar">
+            <br>
+            <label for="foto">Foto atual digital 3x4 ou selfie:</label>
+            <input type="file" id="foto" name="foto">
+            <br><br>
+            <button type="submit">Enviar</button>
+         </form>
+      </div>
+   </div>
 </body>
 </html>

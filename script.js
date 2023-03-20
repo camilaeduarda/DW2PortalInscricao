@@ -21,5 +21,34 @@ function openShowcase(screen) {
     oldScreen = screen
 }
 
+window.onload = () => {
+    let modal = document.getElementById('myModal');
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = () => {
+        modal.style.display = "block";
+    }
+    
+    span.onclick = () => {
+        modal.style.display = "none";
+    }
+    
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 
-// window.onload = () => openShowcase(3)
+    document.getElementById('cpf').addEventListener('keyup', (e) => {
+        const cpf = e.target.value;
+        const cpfSomenteNumeros = cpf.replace(/\D/g, '');
+
+        if (cpfSomenteNumeros.length === 11 && validaCPF(cpf)) {
+            e.target.value = formataCPF(cpf);
+        } else if (cpf.length === 14 && !validaCPF(cpf)) {
+            alert('CPF inválido!');
+            e.target.value = '';
+        }
+    });
+}

@@ -15,7 +15,6 @@
 }
 
 body {
-    background: linear-gradient(to bottom right, var(--primary-color) 0%, var(--secondary-color) 100%);
     font-family: 'DM Serif Text', serif;
     color: var(--secondary-color);
 }
@@ -54,7 +53,6 @@ table td {
 
 main {
     background-color: var(--tertiary-color);
-    /* max-width: var(--max-content-page); */
 }
 
 /* UTILS */
@@ -259,6 +257,7 @@ main {
 }
 
 /* OTHERS */
+
 @media (min-width: 600px) {
     main {
         margin: auto;
