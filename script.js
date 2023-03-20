@@ -1,9 +1,6 @@
-
 let oldScreen = null
 
-
 function openShowcase(screen) {
-
     if (oldScreen == screen) {
         document.querySelector('#showcase-container').innerHTML = ''
         document.querySelectorAll('.show-option').forEach(

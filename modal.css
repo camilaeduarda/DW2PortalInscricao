@@ -14,10 +14,11 @@
 .modal-content {
     position: relative;
     background-color: #fff;
-    margin: 10% auto;
+    margin: 5px auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 90%;
+    border-radius: 1rem;
 }
 
 .close {
@@ -32,4 +33,11 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (min-width: 600px) {    
+    .modal-content {
+        margin: 30px auto;
+        width: 70%;
+    }
 }
