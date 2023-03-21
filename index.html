@@ -12,16 +12,16 @@
 
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="../css/style.css">
-   <link rel="stylesheet" href="modal.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/modal.css">
 
-   <script src="script.js"></script>
-   <script src="utils.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/utils.js"></script>
 </head>
 <body>
     <main>
         <header class="header-container">
-            <img class="ifmslogo" src="ifmslogo.png" alt="">
+            <img class="ifmslogo" src="media/ifmslogo.png">
             <h2>Exame de seleção 2023</h2>
             <h3>Campus Três Lagoas</h3>
         </header>
@@ -45,11 +45,11 @@
             <h3 class="text-center">Cursos Ofertados</h3>
             
             <div class="courses">
-                <div class="course">
+                <div class="course" onclick="chooseCourse(0)">
                     <img class="img-course" src="./media/info.jpeg" />
                 </div>
                 
-                <div class="course">
+                <div class="course" onclick="chooseCourse(1)">
                     <img class="img-course" src="./media/eletro.jpeg" />
                 </div>
             </div>
@@ -85,7 +85,7 @@
             </div>
             
             <div class="doll">
-                <img class="boneca"src="boneca.png" alt="">
+                <img class="boneca"src="media/boneca.png" alt="">
 
                 <button id="myBtn">Inscriver-se</button>
             </div>
@@ -94,11 +94,7 @@
         <footer class="footer-container">
 
             <div>
-                <h1>IF</h1>
-                <p>Dados</p>
-                <p>Dados</p>
-                <p>Dados</p>
-                <p>Dados</p>
+               <img class="ifmslogo" src="media/ifmslogo.png">
             </div>
 
             <div>
@@ -549,29 +545,41 @@
          <span class="close">&times;</span>
          <form>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br>
+            <input id="nome" name="nome" required><br>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
+            <input type="email" id="email" name="email" required><br>
+
             <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-            <br>
+            <input type="password" id="senha" name="senha" required><br>
+
             <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" required>
-            <br>
+            <input id="cpf" name="cpf" required><br>
+
             <label for="rg">RG:</label>
-            <input type="text" id="rg" name="rg" required>
-            <br>
+            <input id="rg" name="rg" required><br>
+
+            <div class="mb-5">
+               <p>Curso Pretendido:</p>
+               <label class="radio-container" for="info" style="--bg-color: blue">
+                  Informática
+                  <input type="radio" id="info" name="curso" value="info" required />
+               </label>
+               <label class="radio-container" for="eletro" style="--bg-color: gold">
+                  Eletrotécnica
+                  <input type="radio" id="eletro" name="curso" value="eletro" />
+               </label>
+            </div>
+
             <label for="historico">Histórico escolar do ensino fundamental ou equivalente:</label>
-            <input type="file" id="historico" name="historico" required>
-            <br>
+            <input type="file" id="historico" name="historico" required><br>
+
             <label for="identificacao">Documento oficial de identificação com foto:</label>
-            <input type="file" id="identificacao" name="identificacao" required>
-            <br>
+            <input type="file" id="identificacao" name="identificacao" required><br>
+
             <label for="militar">Documento que comprove estar em dia com o Serviço Militar (quando pertinente):</label>
-            <input type="file" id="militar" name="militar">
-            <br>
+            <input type="file" id="militar" name="militar"><br>
+
             <label for="foto">Foto atual digital 3x4 ou selfie:</label>
             <input type="file" id="foto" name="foto" required>
             <br><br>

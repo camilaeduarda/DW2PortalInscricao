@@ -18,6 +18,11 @@ function openShowcase(screen) {
     oldScreen = screen
 }
 
+function chooseCourse(course) {
+    document.querySelectorAll('input[type=radio]')[course].checked = true
+    document.getElementById('myModal').style.display = "block";
+}
+
 window.onload = () => {
     let modal = document.getElementById('myModal');
     let btn = document.getElementById("myBtn");
