@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Faça sua inscrição para o ensino médio integrado neste portal de inscrição do IFMS">
+  <meta name="keywords" content="IFMS, incrição, vestibular, ensino médio técnico">
+  <meta name="author" content="CD Company">
+
+  <title>Portal de Inscrição</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <script src="js/script.js"></script>
+  <script src="js/utils.js"></script>
+</head>
+<body>
+<main>
+  <header class="header-container">
+    <div class="foto-dinamica">
+    <img class="ifmslogo" src="media/ifmslogo.png" alt="ifmslogo">
+    </div>
+    <h2>Exame de seleção 2023</h2>
+    <h3>Campus Três Lagoas</h3>
+  </header>
+
+  <section class="informative-container">
+    <h3>Informátivo sobre a instituição no qual</h3>
+
+    <nav>
+      <span class="show-option" onclick="openShowcase(0)">Entenda o Exame</span>
+      <span class="show-option" onclick="openShowcase(1)">Cursos e Vagas</span>
+      <span class="show-option" onclick="openShowcase(2)">Datas importantes</span>
+      <span class="show-option" onclick="openShowcase(3)">O que cai na prova?</span>
+      <span class="show-option" onclick="openShowcase(4)">Dúvidas Frequentes</span>
+      <span class="show-option" onclick="openShowcase(5)">Contato</span>
+    </nav>
+  </section>
+
+  <section id="showcase-container"></section>
+
+  <section class="courses-container">
+    <h3 class="text-center">Cursos Ofertados</h3>
+
+    <div class="courses">
+      <div class="course" onclick="chooseCourse(0)">
+        <div class="foto-dinamica">
+        <img class="img-course" src="./media/info.jpeg" alt="info"/>
+        </div>
+      </div>
+
+      <div class="course" onclick="chooseCourse(1)">
+        <div class="foto-dinamica">
+        <img class="img-course" src="./media/eletro.jpeg" alt="eletro"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registrations-container">
+    <div class="texts">
+      <h1>Inscrições</h1>
+      <h3>12 AGO à 05 OUT</h3>
+    </div>
+    <div class="qr-code">
+      <div class="foto-dinamica">
+      <img src="./media/qr.png" alt="QR CODE" title="QR CODE">
+      </div>
+    </div>
+  </section>
+
+  <section class="last-banner-container">
+    <div class="post-it">
+      <p>A sua prova ocorrerá no dia <strong style="font-size: 1.2em;">23 OUT</strong></p>
+
+      <p>Documentos básicos necessários:</p>
+      <div style="padding: 1rem; font-size: 14px;">
+        <ol>
+          <li>Histórico escolar do ensino fundamental ou equivalente;</li>
+          <li>Documento oficial de identificação com foto;</li>
+          <li>Documento que comprove estar em dia com o Serviço Militar (quando pertinente);</li>
+          <li>Uma foto atual digital 3x4</li>
+        </ol>
+      </div>
+
+      <p style="font-size: 10px;">
+        * A documentação completa deve <br> ser consultada no <a class="link" href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2023-tecnico-integrado-edital-061-2022-edital-061-13-2022-relacao-de-cursos-com-matriculas-concluidas-e-cursos-com-vagas-remanescentes.pdf">Edital 061.13/2022.</a>
+      </p>
+    </div>
+
+    <div class="doll">
+      <div class="foto-dinamica">
+      <img class="boneca" src="media/boneca.png" alt="boneca">
+      </div>
+
+      <button class="botao-dinamica" id="myBtn">Inscriver-se</button>
+    </div>
+  </section>
+
+  <footer class="footer-container">
+
+    <div>
+      <div class="foto-dinamica">
+      <img class="ifmslogo" src="media/ifmslogo.png" alt="ifmslogo">
+      </div>
+    </div>
+
+    <div>
+      <p><small>O IFMS está com matrículas abertas para quem deseja ingressar nos cursos técnicos integrados que possuem vagas remanescentes, ou seja, não ocupadas por candidatos do Exame de Seleção 2023.</small></p>
+      <br />
+      <p><small>O interessado deve comparecer à Cerel (Central de Relacionamento) do campus onde o curso é ofertado, de forma presencial, portando os documentos para a matrícula, observando o endereço e o horário de atendimento de cada unidade.</small></p>
+    </div>
+
+    <div>
+      <h3>Noticias sobre EXAME DE SELEÇÃO 2023</h3>
+      <p><small><a class="link-secondary" target="_blank" href="https://www.ifms.edu.br/noticias/2023/divulgada-2a-chamada-para-tecnico-integrado">Divulgada 2ª chamada para cursos técnicos integrados</a></small></p>
+      <p><small><a class="link-secondary" target="_blank" href="https://www.ifms.edu.br/noticias/2023/abertas-vagas-a-comunidade-em-cursos-tecnicos-integrados">Abertas vagas à comunidade em cursos técnicos integrados</a></small></p>
+      <p><small><a class="link-secondary" target="_blank" href="https://www.ifms.edu.br/noticias/2023/aberta-matricula-de-aprovados-para-tecnico-integrado">Abertas matrículas de aprovados para técnico integrado</a></small></p>
+      <p><small><a class="link-secondary" target="_blank" href="https://www.ifms.edu.br/noticias/2022/divulgada-1-chamada-para-cursos-tecnicos-integrados">Divulgada 1ª chamada para cursos técnicos integrados</a></small></p>
+    </div>
+  </footer>
+</main>
+
+<template id="screen-0">
+  <p>O <b>Exame de Seleção do Instituto Federal de Mato Grosso do Sul (IFMS)</b> é a prova para ingresso em cursos técnicos integrados ao ensino médio, ofertados gratuitamente em dez municípios do estado.</p> <br />
+  <p>Nesse tipo de curso, o estudante tem a oportunidade de fazer, ao mesmo tempo, o ensino médio regular e a formação profissional técnica escolhida. Após se formar, o diploma possibilitará o ingresso tanto na universidade como no mundo do trabalho.</p> <br />
+  <p>O único requisito para tentar uma vaga é ter concluído o ensino fundamental até a data de matrícula na instituição, prevista para janeiro de 2023. O candidato também deve ter Cadastro de Pessoa Física (CPF) em seu nome.</p> <br />
+  <p>Para ingresso em 2023, o IFMS oferta 1.670 vagas em diversas opções de cursos técnicos integrados, em Aquidauana, Campo Grande, Corumbá, Coxim, Dourados, Jardim, Naviraí, Nova Andradina, Ponta Porã e Três Lagoas.</p>
+</template>
+
+<template id="screen-1">
+  <div class="table-container mb-5">
+    <table class="vacancy-table">
+      <tbody>
+      <tr>
+        <td class="text-center"><b>Campus</b></td>
+        <td class="text-center"><b>Curso</b></td>
+        <td class="text-center"><b>Turno</b></td>
+        <td class="text-center"><b>Vagas</b></td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <a class="link" href="https://www.ifms.edu.br/campi/campus-aquidauana/cursos/integrado" target="_blank" title="Aquidauana">Aquidauana</a>
+        </td>
+        <td rowspan="2">Técnico em Edificações (<a target="_blank" title="Saiba mais sobre o curso" href="https://www.ifms.edu.br/campi/campus-aquidauana/cursos/integrado/edificacoes" class="internal-link">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-aquidauana/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="8"><a class="link" href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados" target="_blank" title="Campo Grande">Campo Grande</a></td>
+        <td rowspan="2">Técnico em Administração<strong>&nbsp;</strong>(<a href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/administracao-1/administracao" title="Saiba mais sobre o curso" target="_blank" class="link">Saiba mais sobre o curso</a>)<a href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/integrado/resolveuid/cdef8dcebbe541859a584642542019d9" class="link"></a></td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Eletrotécnica (<a class="link" href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/eletrotecnica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)<a href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/integrado/resolveuid/6ee161cebc48424c87cfc0468b564409" class="link"></a></td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Mecânica (<a class="link" href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/mecanica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)<a href="https://www.ifms.edu.br/campi/campus-campo-grande/cursos/integrados/integrado/resolveuid/a3f7c6abef7f4a94a2301b2249183c14" class="link"></a></td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a class="link" href="https://www.ifms.edu.br/campi/campus-corumba/cursos/integrado" target="_blank" title="Corumbá">Corumbá</a></td>
+        <td>Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-corumba/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td>Técnico em Metalurgia (<a class="link" href="https://www.ifms.edu.br/campi/campus-corumba/cursos/integrado/metalurgia" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><a class="link" href="https://www.ifms.edu.br/campi/campus-coxim/cursos/integrado" target="_blank" title="Coxim">Coxim</a></td>
+        <td>Técnico em Alimentos (<a class="link" href="https://www.ifms.edu.br/campi/campus-coxim/cursos/integrado/alimentos" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td>Técnico em Aquicultura (<a class="link" href="https://www.ifms.edu.br/campi/campus-coxim/cursos/integrado/Aquicultura" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Desenvolvimento de Sistemas (<a class="link" href="https://www.ifms.edu.br/campi/campus-coxim/cursos/integrado/desenvolvimento-de-sistemas" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)<a class="link" href="https://www.ifms.edu.br/campi/campus-coxim/cursos/integrado/desenvolvimento-de-sistemas"></a></td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><a class="link" href="https://www.ifms.edu.br/campi/campus-dourados/cursos/integrado" target="_blank" title="Dourados">Dourados</a></td>
+        <td rowspan="2">Técnico em Administração (<a href="https://www.ifms.edu.br/campi/campus-dourados/cursos/integrado/administracao/administracao-1" title="Saiba mais sobre o curso" target="_blank" class="link">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><br>Técnico em Informática para Internet (<a class="link" href="https://www.ifms.edu.br/campi/campus-dourados/cursos/integrado/informatica-para-internet-1/informatica-para-internet" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a class="link" href="https://www.ifms.edu.br/campi/campus-jardim/cursos/integrado" target="_blank" title="Jardim">Jardim</a></td>
+        <td>Técnico em Edificações (<a class="link" href="https://www.ifms.edu.br/campi/campus-jardim/cursos/integrado/edificacoes/edificacoes" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">35</td>
+      </tr>
+      <tr>
+        <td>Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-jardim/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">35</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a class="link" href="https://www.ifms.edu.br/campi/campus-navirai/cursos/integrado" target="_blank" title="Naviraí">Naviraí</a></td>
+        <td>Técnico em Agricultura (<a class="link" href="https://www.ifms.edu.br/campi/campus-navirai/cursos/integrado/agricultura" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td>Técnico em Informática para Internet (<a class="link" href="https://www.ifms.edu.br/campi/campus-navirai/cursos/integrado/informatica-para-a-internet" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td rowspan="2"><a class="link" href="https://www.ifms.edu.br/campi/campus-nova-andradina/cursos/integrado" target="_blank" title="Nova Andradina">Nova Andradina</a></td>
+        <td>Técnico em Agropecuária (<a class="link" href="https://www.ifms.edu.br/campi/campus-nova-andradina/cursos/integrado/agropecuaria" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino e Vespertino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td>Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-nova-andradina/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">80</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><a class="link" href="https://www.ifms.edu.br/campi/campus-ponta-pora/cursos/integrado" target="_blank" title="Ponta Porã">Ponta Porã</a></td>
+        <td rowspan="2">Técnico em Agricultura (<a class="link" href="https://www.ifms.edu.br/campi/campus-ponta-pora/cursos/integrado/agricultura" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-ponta-pora/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="4"><a class="link" href="https://www.ifms.edu.br/campi/campus-tres-lagoas/cursos/integrado" target="_blank" title="Três Lagoas">Três Lagoas</a></td>
+        <td rowspan="2">Técnico em Eletrotécnica (<a class="link" href="https://www.ifms.edu.br/campi/campus-tres-lagoas/cursos/integrado/eletrotecnica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Técnico em Informática (<a class="link" href="https://www.ifms.edu.br/campi/campus-tres-lagoas/cursos/integrado/informatica" target="_blank" title="Saiba mais sobre o curso">Saiba mais sobre o curso</a>)</td>
+        <td class="text-center">Matutino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td class="text-center">Vespertino</td>
+        <td class="text-center">40</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="text-center"><strong>TOTAL</strong></td>
+        <td colspan="2" class="text-center"><strong>1.670 VAGAS</strong></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><small>* Aulas no período matutino, podendo ocorrer no vespertino para atendimento da distribuição da carga horária do curso.</small></p>
+  <p><small>* Aulas no período vespertino, podendo ocorrer no matutino para atendimento da distribuição da carga horária do curso.</small></p>
+</template>
+
+<template id="screen-2">
+  <div class="mb-5 table-container">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Etapa</strong></td>
+        <td><strong>Data/Período</strong></td>
+      </tr>
+      <tr>
+        <td>Período de inscrições on-line</td>
+        <td>12/08 a 05/10/2022</td>
+      </tr>
+      <tr>
+        <td>Período de solicitação de isenção da taxa de inscrição</td>
+        <td>12/08 a 23/09/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do resultado dos pedidos de isenção da taxa de inscrição</td>
+        <td>27/09/2022</td>
+      </tr>
+      <tr>
+        <td>Período de Interposição de recursos contra o resultado preliminar dos pedidos de isenção </td>
+        <td>28 e 29/09/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do resultado definitivo dos pedidos de isenção da taxa</td>
+        <td>03/10/2022</td>
+      </tr>
+      <tr>
+        <td>Data limite para solicitação de atendimento diferenciado para realização da prova e envio de laudo/atestado médico</td>
+        <td>23/09/2022</td>
+      </tr>
+      <tr>
+        <td>Data limite para pagamento da taxa de inscrição</td>
+        <td>06/10/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação da relação preliminar das inscrições homologadas</td>
+        <td>13/10/2022</td>
+      </tr>
+      <tr>
+        <td>Período de interposição de recursos contra a relação preliminar de inscrições homologadas - opção de curso e ação afirmativa (cotas), comprovação de pagamento, laudo médico para atendimento diferenciado</td>
+        <td>14 e 15/10/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação da relação final das inscrições homologadas e locais de prova</td>
+        <td>18/10/2022</td>
+      </tr>
+      <tr>
+        <td>Aplicação da prova</td>
+        <td>23/10/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do gabarito preliminar</td>
+        <td>24/10/2022</td>
+      </tr>
+      <tr>
+        <td>Período de interposição de recurso contra a prova e/ou o gabarito preliminar</td>
+        <td>25 e 26/10/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do gabarito definitivo</td>
+        <td>03/11/2022</td>
+      </tr>
+      <tr>
+        <td>Convocação para banca de heteroidentificação dos candidatos beneficiários da ação afirmativa (cotas) autodeclarados negros (pretos ou pardos)</td>
+        <td>04/11/2022</td>
+      </tr>
+      <tr>
+        <td>Período de realização das bancas de heteroidentificação </td>
+        <td>08/11 a 30/11/2022</td>
+      </tr>
+      <tr>
+        <td>Publicação do resultado da verificação de heteroidentificação</td>
+        <td>05/12/2022</td>
+      </tr>
+      <tr>
+        <td>Período de interposição de recurso contra o resultado da verificação de heteroidentificação</td>
+        <td>06 e 07/12/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do resultado preliminar do processo seletivo</td>
+        <td>14/12/2022</td>
+      </tr>
+      <tr>
+        <td>Período de interposição de recursos contra o resultado preliminar do processo seletivo</td>
+        <td>15 e 16/12/2022</td>
+      </tr>
+      <tr>
+        <td>Divulgação do resultado final e da 1ª chamada </td>
+        <td>21/12/2022</td>
+      </tr>
+      <tr>
+        <td>Período de matrículas da 1ª chamada </td>
+        <td>09/01 a 13/01/2023</td>
+      </tr>
+      <tr>
+        <td>Divulgação da 2ª chamada e lista de espera</td>
+        <td>19/01/2023</td>
+      </tr>
+      <tr>
+        <td>Período de matrículas da 2ª chamada e manifestação de interesse na vaga para os candidatos de lista de espera </td>
+        <td>23/01 a 27/01/2023</td>
+      </tr>
+      <tr>
+        <td>Início das aulas</td>
+        <td>fevereiro/2023</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<template id="screen-3">
+  <p>O Exame de Seleção 2023 será composto por 30 questões de múltipla escolha, sendo:</p>
+  <p class="mb-5">Para saber o que cai na prova, confira o conteúdo programático no Anexo X do Edital do Exame.</p>
+
+  <div class="table-container mb-5">
+    <table>
+      <tbody>
+      <tr>
+        <td><strong>Área</strong></td>
+        <td><strong>Peso</strong></td>
+        <td><strong>Nº de questões</strong></td>
+        <td><strong>Pontos</strong></td>
+      </tr>
+      <tr>
+        <td>Língua Portuguesa</td>
+        <td>4</td>
+        <td>10</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Matemática</td>
+        <td>4</td>
+        <td>10</td>
+        <td>40</td>
+      </tr>
+      <tr>
+        <td>Conhecimentos Gerais</td>
+        <td>2</td>
+        <td>10</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td colspan="2">TOTAL</td>
+        <td>30</td>
+        <td>100</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="mb-5"><b>Quer testar seu conhecimento?</b> - Acesse as provas e os gabaritos dos Exames de Seleção anteriores:</p>
+
+  <p class="mb-5">>Exame de Seleção 2019 - <a class="link" href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2019-tecnico-de-nivel-medio-integrado-edital-064-2018-prova-exame-de-selecao-2019.pdf" target="_blank" title="" data-mce-href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2019-tecnico-de-nivel-medio-integrado-edital-064-2018-prova-exame-de-selecao-2019.pdf">prova</a> | <a class="link" href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2019-tecnico-de-nivel-medio-integrado-edital-064-2018-edital-064-7_gabarito-definitivo.pdf" target="_blank" title="" data-mce-href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2019-tecnicode-nivel-medio-integrado-edital-064-2018-edital-064-7_gabarito-definitivo.pdf">gabarito</a></p>
+  <p class="mb-5">>Exame de Seleção 2018 - <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2018-tecnico-integrado-edital-066-2017-prova-exame-selecao-2018.pdf" target="_blank" title="prova" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2018-tecnico-integrado-edital-066-2017-prova-exame-selecao-2018.pdf">prova</a> | <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2018-tecnico-integrado-edital-066-2017-edital-066-8_gabarito-definitivo.pdf" target="_blank" title="gabarito" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2018-tecnico-integrado-edital-066-2017-edital-066-8_gabarito-definitivo.pdf">gabarito</a></p>
+  <p class="mb-5">>Exame de Seleção 2017 - <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2017-tecnico-integrado-edital-no-030-2016-prova-do-exame-de-selecao-2017.pdf" target="_blank" title="prova" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2017-tecnico-integrado-edital-no-030-2016-prova-do-exame-de-selecao-2017.pdf">prova</a> | <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2017-tecnico-integrado-edital-no-030-2016-edital-030-9-2016-gabarito-definitivo.pdf" target="_blank" title="gabarito" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2017-tecnico-integrado-edital-no-030-2016-edital-030-9-2016-gabarito-definitivo.pdf">gabarito</a></p>
+  <p class="mb-5">Exame de Seleção 2016 - <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2016-tecnico-integrado-edital-no-028-2015-caderno-de-prova-dos-cursos-integrados.pdf" target="_blank" title="prova" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2016-tecnico-integrado-edital-no-028-2015-caderno-de-prova-dos-cursos-integrados.pdf">prova</a> | <a class="link" href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2016-tecnico-integrado-edital-no-028-2015-edital-028-5-2015-gabarito-definitivo.pdf" target="_blank" title="gabarito" data-mce-href="https://selecao.ifms.edu.br/edital/files/exame-de-selecao-2016-tecnico-integrado-edital-no-028-2015-edital-028-5-2015-gabarito-definitivo.pdf">gabarito</a></p>
+
+  <p><b>Importante:</b> Com duração máxima de 4 horas, o Exame de Seleção será aplicado no dia 23 de outubro de 2022. Você só poderá levar caneta azul ou preta de tubo transparente, lápis e borracha, além de um documento oficial de identificação com foto. É permitido que o candidato leve água (garrafa transparente e sem rótulo) e pequenos lanches. </p>
+</template>
+
+<template id="screen-4">
+  <div class="mb-5">
+    <h1>Como faço o pagamento da minha taxa de inscrição no Exame de Seleção 2023?</h1>
+    <p>De acordo com o item 4.1 do Edital 061/2022, a taxa de inscrição deverá ser paga em qualquer agência do Banco do Brasil, utilizando a Guia de Recolhimento da União (GRU). Só é possível o pagamento por aplicativo se for do Banco do Brasil, lembrando que não é um boleto, é preciso pagar como Guia de Recolhimento da União - GRU. Também não é possível o pagamento da GRU em casas lotéricas, somente em agências do Banco do Brasil. Como a GRU não é registrada automaticamente, a orientação é de que o pagamento seja feito no dia seguinte ao da emissão dela, respeitando o prazo limite final de 6 de outubro de 2022.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Não tenho CPF. Posso me inscrever no Exame de Seleção com o CPF de outra pessoa, da minha mãe ou do meu pai, por exemplo?</h1>
+    <p>Não. Você precisa cadastrar seu próprio CPF na Central de Seleção do IFMS. Caso não possua, procure as agências dos Correios, Banco do Brasil, Caixa Econômica Federal ou Receita Federal, e providencie a aquisição do documento.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Esqueci minha senha de acesso à Página do Candidato da Central de Seleção do IFMS. O que devo fazer?</h1>
+    <p>Para recuperar sua senha, clique em "Esqueci minha senha" na Página do Candidato e digite o seu CPF. Na sequência, escolha uma opção para redefinir a senha:</p>
+    <p>1. Receber um e-mail (escolhendo essa opção, você receberá instruções pelo endereço de e-mail que cadastrou);</p>
+    <p>2. Preencher dados pessoais (ao escolher essa opção, informe dados pessoais inseridos no seu cadastro, como data de nascimento, nº do RG e nome da mãe).</p>
+  </div>
+  <div class="mb-5">
+    <h1>Já curso o ensino médio. Posso me inscrever no Exame de Seleção do IFMS? Nesse caso, posso aproveitar matérias?</h1>
+    <p>Pode se inscrever no Exame de Seleção, sim. Mas, uma vez aprovado, você deverá fazer a matrícula obrigatoriamente em todas as disciplinas do primeiro semestre. O aproveitamento de disciplinas cursadas só ocorre se houver similaridade de conteúdos e carga horária.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Quero somente o diploma de técnico. Posso frequentar o curso técnico integrado e assistir somente às disciplinas específicas?</h1>
+    <p>Não. No curso técnico integrado, o estudante deve obrigatoriamente cursar todas as unidades curriculares previstas na matriz. Para a formação técnica exclusivamente profissional, o IFMS oferece cursos técnicos subsequentes, destinados a quem já concluiu o ensino médio. São cursos de menor duração.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Como o candidato sabe o local da prova?</h1>
+    <p>É de total responsabilidade do candidato ou de seu responsável verificar o local onde será realizada a prova, acessando a lista que será divulgada na Central de Seleção do IFMS, conforme o cronograma previsto no edital do Exame de Seleção 2023.</p>
+  </div>
+  <div class="mb-5">
+    <h1>É possível trocar o local de prova?</h1>
+    <p>Não. A prova só poderá ser feita no local determinado pelo IFMS, no município escolhido pelo candidato no ato da inscrição.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Qual documento de identificação eu preciso levar no dia da prova?</h1>
+    <p>Os candidatos deverão apresentar-se nos locais de prova portando RG ou outro documento oficial de identificação com foto. Serão considerados documentos oficiais de identificação: carteiras expedidas pelos Comandos Militares, Secretarias de Segurança Pública, Institutos de Identificação e Corpos de Bombeiros Militares; carteiras expedidas pelos órgãos fiscalizadores de exercício profissional (ordens, conselhos etc.); passaporte brasileiro; certificado de reservista; carteiras funcionais expedidas por órgão público que, por lei federal, valham como identidade; carteira de trabalho; carteira nacional de habilitação (somente o modelo com foto).</p>
+  </div>
+  <div class="mb-5">
+    <h1>Como o candidato tem acesso ao resultado da prova?</h1>
+    <p>O resultado será divulgado conforme data prevista no edital de abertura do Exame de Seleção 2023. Para consultá-lo, o candidato deverá acessar a página do edital na Central de Seleção do IFMS.</p>
+  </div>
+  <div class="mb-5">
+    <h1>Fui aprovado no Exame de Seleção. O que preciso fazer para começar a estudar no IFMS?</h1>
+    <p>Após ser convocado em uma das chamadas, o candidato deverá ficar atento aos prazos de matrícula e à documentação necessária para ser apresentada no campus do IFMS, conforme o disposto no edital do Exame de Seleção 2023.</p>
+  </div>
+  <div>
+    <h1>Qual é o requisito para me matricular em um dos cursos técnicos integrados do IFMS?</h1>
+    <p>Ter concluído o ensino fundamental até a data de matrícula, prevista para janeiro de 2023.</p>
+  </div>
+</template>
+
+<template id="screen-5">
+  <h1>Comissão Central do Exame de Seleção 2023</h1>
+  <p>Telefone: (67) 3378-9547</p>
+  <p>E-mail: processoseletivo@ifms.edu.br</p>
+  <p>Horário de atendimento: 8h às 17h</p>
+  <p>Reitoria do IFMS: Rua Jorn. Belizário Lima, 236, Vila Glória - Campo Grande/MS - CEP: 79004-270  (endereço provisório)</p>
+</template>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+      <label for="nome">Nome:</label>
+      <input id="nome" name="nome" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br>
+
+      <label for="cpf">CPF:</label>
+      <input id="cpf" name="cpf" required><br>
+
+      <label for="rg">RG:</label>
+      <input id="rg" name="rg" required><br>
+
+      <div class="mb-5">
+        <p>Curso Pretendido:</p>
+        <label class="radio-container" for="info" style="--bg-color: blue">
+          Informática
+          <input type="radio" id="info" name="curso" value="info" required />
+        </label>
+        <label class="radio-container" for="eletro" style="--bg-color: gold">
+          Eletrotécnica
+          <input type="radio" id="eletro" name="curso" value="eletro" />
+        </label>
+      </div>
+
+      <label for="historico">Histórico escolar do ensino fundamental ou equivalente:</label>
+      <input type="file" id="historico" name="historico" required><br>
+
+      <label for="identificacao">Documento oficial de identificação com foto:</label>
+      <input type="file" id="identificacao" name="identificacao" required><br>
+
+      <label for="militar">Documento que comprove estar em dia com o Serviço Militar (quando pertinente):</label>
+      <input type="file" id="militar" name="militar"><br>
+
+      <label for="foto">Foto atual digital 3x4 ou selfie:</label>
+      <input type="file" id="foto" name="foto" required>
+      <br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
