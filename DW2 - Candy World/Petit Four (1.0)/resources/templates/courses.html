@@ -1,0 +1,59 @@
+<div id="myModal" class="modal" xmlns="http://www.w3.org/1999/html">
+  <div class="modal-content">
+    <form>
+    <span class="close">
+    <form action="../../../index.html">
+      <input class="botao-dinamica-reverse" id="btn" type="button" value="&times;"
+             onClick="window.location.reload(true)">
+   </form>
+    </span>
+    </form>
+
+    <form>
+      <label for="nome">Nome:</label>
+      <input id="nome" name="nome" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br>
+
+      <label for="cpf">CPF:</label>
+      <input id="cpf" name="cpf" required><br>
+
+      <label for="rg">RG:</label>
+      <input id="rg" name="rg" required><br>
+
+      <div class="mb-5">
+        <p>Curso Pretendido:</p>
+        <label class="radio-container" for="info" style="--bg-color: blue">
+          Informática
+          <input type="radio" id="info" name="curso" value="info" required/>
+        </label>
+        <label class="radio-container" for="eletro" style="--bg-color: gold">
+          Eletrotécnica
+          <input type="radio" id="eletro" name="curso" value="eletro"/>
+        </label>
+      </div>
+
+      <label for="historico">Histórico escolar do ensino fundamental ou equivalente:</label>
+      <input type="file" id="historico" name="historico" required><br>
+
+      <label for="identificacao">Documento oficial de identificação com foto:</label>
+      <input type="file" id="identificacao" name="identificacao" required><br>
+
+      <label for="militar">Documento que comprove estar em dia com o Serviço Militar (quando pertinente):</label>
+      <input type="file" id="militar" name="militar"><br>
+
+      <label for="foto">Foto atual digital 3x4 ou selfie:</label>
+      <input type="file" id="foto" name="foto" required>
+      <br><br>
+      <button class="botao-dinamica" type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  w3.includeHTML();
+</script>

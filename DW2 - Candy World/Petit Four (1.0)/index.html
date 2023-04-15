@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Faça sua inscrição para o ensino médio integrado neste portal de inscrição do IFMS">
+  <meta name="keywords" content="IFMS, incrição, vestibular, ensino médio técnico">
+  <meta name="author" content="CD Company">
+
+  <title>Portal de Inscrição</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/modal.css">
+
+  <script src="js/script.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+<main>
+  <header class="header-container">
+    <div class="foto-dinamica">
+      <img class="ifmslogo" src="media/ifmslogo.png" alt="ifmslogo">
+    </div>
+    <h2>Exame de seleção 2023</h2>
+    <h3>Campus Três Lagoas</h3>
+  </header>
+
+  <section class="informative-container">
+    <h4><p> O Instituto Federal de Educação, Ciência e Tecnologia de Mato Grosso do Sul (IFMS) é uma instituição de
+      ensino público federal que oferece
+      cursos de nível médio, técnico, graduação e pós-graduação em diversas áreas do conhecimento, como tecnologia,
+      engenharia, ciências sociais
+      e da saúde, entre outras. </p>
+      <br>
+      <p> Fundado em 2008, o IFMS tem como missão promover o desenvolvimento socioeconômico e cultural da região
+        sul-mato-grossense por meio da educação, pesquisa e extensão, contribuindo para a formação de profissionais
+        competentes e éticos,
+        capazes de atuar de forma crítica e criativa em suas áreas de atuação.</p></h4>
+
+    <nav>
+      <a href="#002_he">
+        <span class="show-option" onclick="openShowcase(0)">Entenda o Exame</span>
+        <span class="show-option" onclick="openShowcase(1)">Cursos e Vagas</span>
+        <span class="show-option" onclick="openShowcase(2)">Datas importantes</span>
+        <span class="show-option" onclick="openShowcase(3)">O que cai na prova?</span>
+        <span class="show-option" onclick="openShowcase(4)">Dúvidas Frequentes</span>
+        <span class="show-option" onclick="openShowcase(5)">Contato</span>
+      </a>
+    </nav>
+  </section>
+  <div class="description g-nobre" id="002_he">
+    <a href="elemento/002_he"></a>
+    <div w3-include-html="resources\static\informative.html"></div>
+  </div>
+
+  <section id="showcase-container"></section>
+
+  <section class="courses-container">
+    <h3 class="text-center">Cursos Ofertados</h3>
+
+    <div class="courses">
+      <div class="course" onclick="chooseCourse(0)">
+        <div class="foto-dinamica">
+          <img class="img-course" src="./media/info.jpeg" alt="info"/>
+        </div>
+      </div>
+
+      <div class="course" onclick="chooseCourse(1)">
+        <div class="foto-dinamica">
+          <img class="img-course" src="./media/eletro.jpeg" alt="eletro"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="registrations-container">
+    <div class="texts">
+      <h1>Inscrições</h1>
+      <h3>12 AGO à 05 OUT</h3>
+    </div>
+    <div class="qr-code">
+      <div class="foto-dinamica">
+        <img src="./media/qr.png" alt="QR CODE" title="QR CODE">
+      </div>
+    </div>
+  </section>
+
+  <section class="last-banner-container">
+    <div class="post-it">
+      <p>A sua prova ocorrerá no dia <strong style="font-size: 1.2em;">23 OUT</strong></p>
+
+      <p>Documentos básicos necessários:</p>
+      <div style="padding: 1rem; font-size: 14px;">
+        <ol>
+          <li>Histórico escolar do ensino fundamental ou equivalente;</li>
+          <li>Documento oficial de identificação com foto;</li>
+          <li>Documento que comprove estar em dia com o Serviço Militar (quando pertinente);</li>
+          <li>Uma foto atual digital 3x4</li>
+        </ol>
+      </div>
+
+      <p style="font-size: 10px;">
+        * A documentação completa deve <br> ser consultada no <a class="link"
+                                                                 href="https://selecao.ifms.edu.br/edital/files/estudante-exame-de-selecao-2023-tecnico-integrado-edital-061-2022-edital-061-13-2022-relacao-de-cursos-com-matriculas-concluidas-e-cursos-com-vagas-remanescentes.pdf">Edital
+        061.13/2022.</a>
+      </p>
+    </div>
+
+    <div class="doll">
+      <div class="foto-dinamica">
+        <img class="boneca" src="media/boneca.png" alt="boneca">
+      </div>
+
+      <div class="course" onclick="chooseCourse(0)">
+        <a href="#003_he">
+          <button class="botao-dinamica" id="myBtn">Inscriver-se</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="description g-nobre" id="003_he">
+    <a href="elemento/003_he"></a>
+    <div w3-include-html="resources\templates\courses.html"></div>
+  </div>
+
+  <script>
+    w3.includeHTML();
+  </script>
+
+  <footer class="footer-container">
+
+    <div>
+      <div class="foto-dinamica">
+        <img class="ifmslogo" src="media/ifmslogo.png" alt="ifmslogo">
+      </div>
+    </div>
+
+    <div>
+      <p><small>O IFMS está com matrículas abertas para quem deseja ingressar nos cursos técnicos integrados que possuem
+        vagas remanescentes, ou seja, não ocupadas por candidatos do Exame de Seleção 2023.</small></p>
+      <br/>
+      <p><small>O interessado deve comparecer à Cerel (Central de Relacionamento) do campus onde o curso é ofertado, de
+        forma presencial, portando os documentos para a matrícula, observando o endereço e o horário de atendimento de
+        cada unidade.</small></p>
+    </div>
+
+    <div>
+      <h3>Noticias sobre EXAME DE SELEÇÃO 2023</h3>
+      <p><small><a class="link-secondary" target="_blank"
+                   href="https://www.ifms.edu.br/noticias/2023/divulgada-2a-chamada-para-tecnico-integrado">Divulgada 2ª
+        chamada para cursos técnicos integrados</a></small></p>
+      <p><small><a class="link-secondary" target="_blank"
+                   href="https://www.ifms.edu.br/noticias/2023/abertas-vagas-a-comunidade-em-cursos-tecnicos-integrados">Abertas
+        vagas à comunidade em cursos técnicos integrados</a></small></p>
+      <p><small><a class="link-secondary" target="_blank"
+                   href="https://www.ifms.edu.br/noticias/2023/aberta-matricula-de-aprovados-para-tecnico-integrado">Abertas
+        matrículas de aprovados para técnico integrado</a></small></p>
+      <p><small><a class="link-secondary" target="_blank"
+                   href="https://www.ifms.edu.br/noticias/2022/divulgada-1-chamada-para-cursos-tecnicos-integrados">Divulgada
+        1ª chamada para cursos técnicos integrados</a></small></p>
+    </div>
+  </footer>
+</main>
+</body>
+</html>
